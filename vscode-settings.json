@@ -1,0 +1,29 @@
+{
+    "workbench.colorTheme": "Solarized Dark",
+
+    "editor.tabSize": 2,
+
+    "editor.cursorBlinking": "phase",
+    "extensions.ignoreRecommendations": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "window.zoomLevel": 0,
+    "git.autofetch": true,
+    "python.linting.pylintArgs": [
+        "--disable=E0401"
+    ],
+    "gitlens.keymap": "alternate",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "editor.fontFamily": "Roboto Mono Light for Powerline, Hack, Menlo, Monaco, 'Courier New', monospace",
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorBlinking": true
+}
