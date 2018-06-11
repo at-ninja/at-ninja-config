@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/athomas/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -67,7 +67,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export DEFAULT_USER="athomas"
+export DEFAULT_USER="chattahippie"
 export HOMEBREW_NO_ANALYTICS=1
 export CLICOLOR=1
 
@@ -79,7 +79,7 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 # vs code setup
-export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 alias moo='fortune | cowsay -W 60'
 

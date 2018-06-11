@@ -33,8 +33,6 @@ brew cask install google-chrome
 brew cask install firefox
 
 #Brew tools are installed. configure them
-echo "Brew install done. Input to continue..."
-read
 
 #npm globals
 npm i -g ionic
@@ -43,13 +41,12 @@ npm i -g eclint
 npm i -g foreman
 npm i -g sass
 
-echo "npm globals are installed. Input to continue..."
-read
-
 #zsh config
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-curl -fsSl https://raw.githubusercontent.com/chattahippie/chattahippie-config/master/agnoster-athomas.zsh-theme -o ~/.oh-my-zsh/custom/themes/agnoster-athomas.zsh-theme
+git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+curl -fsSL https://raw.githubusercontent.com/chattahippie/chattahippie-config/master/.zshrc -o ~/.zshrc
+curl -fsSL https://raw.githubusercontent.com/chattahippie/chattahippie-config/master/agnoster-athomas.zsh-theme -o ~/.oh-my-zsh/custom/themes/agnoster-athomas.zsh-theme
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+chsh -s /bin/zsh
 
 echo "zsh configured. Input to continue..."
 read
