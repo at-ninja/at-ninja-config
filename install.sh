@@ -43,8 +43,8 @@ npm i -g sass
 
 #zsh config
 git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-curl -fsSL https://raw.githubusercontent.com/chattahippie/chattahippie-config/master/.zshrc -o ~/.zshrc
-curl -fsSL https://raw.githubusercontent.com/chattahippie/chattahippie-config/master/agnoster-athomas.zsh-theme -o ~/.oh-my-zsh/custom/themes/agnoster-athomas.zsh-theme
+curl -fsSL https://raw.githubusercontent.com/chattahippie/chattahippie-config/master/.zshrc > ~/.zshrc
+curl -fsSL https://raw.githubusercontent.com/chattahippie/chattahippie-config/master/agnoster-athomas.zsh-theme > ~/.oh-my-zsh/custom/themes/agnoster-athomas.zsh-theme
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 chsh -s /bin/zsh
 
@@ -52,13 +52,21 @@ echo "zsh configured. Input to continue..."
 read
 
 #VSCode config
-curl -fsSL https://raw.githubusercontent.com/chattahippie/chattahippie-config/master/vscode-settings.json -o ~/Library/Application\ Support/Code/User/settings.json
-/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code --install-extension EditorConfig.EditorConfig
-/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code --install-extension HookyQR.beautify
-/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code --install-extension PKief.material-icon-theme
+curl -fsSL https://raw.githubusercontent.com/chattahippie/chattahippie-config/master/vscode-settings.json > ~/Library/Application\ Support/Code/User/settings.json
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension EditorConfig.EditorConfig
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension HookyQR.beautify
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension PKief.material-icon-theme
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension dbaeumer.vscode-eslint
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension eamodio.gitlens
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension felipe.nasc-touchbar
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension ms-python.python
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension msjsdiag.debugger-for-chrome
 # TODO install rest of useful extensions
 
 #Hyper config
 curl -fsSL https://raw.githubusercontent.com/chattahippie/chattahippie-config/master/.hyper.js -o ~/.hyper.js
 
-# TODO Install Powerline fonts
+# Install Powerline fonts
+git clone https://github.com/powerline/fonts.git --depth=1
+sh fonts/install.sh
+rm -rf fonts 
