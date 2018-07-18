@@ -22,6 +22,9 @@ brew install openssl
 brew install mysql
 brew install cowsay
 brew install fortune
+brew install hub
+brew install thefuck
+brew install yarn
 
 #Dev Apps
 brew cask install hyper
@@ -31,6 +34,10 @@ brew cask install macdown
 #Web Tools
 brew cask install google-chrome
 brew cask install firefox
+
+#Monoid
+brew tap homebrew/cask-fonts
+brew cask install font-monoid
 
 #Brew tools are installed. configure them
 
@@ -48,9 +55,6 @@ curl -fsSL https://raw.githubusercontent.com/chattahippie/chattahippie-config/ma
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 chsh -s /bin/zsh
 
-echo "zsh configured. Input to continue..."
-read
-
 #VSCode config
 curl -fsSL https://raw.githubusercontent.com/chattahippie/chattahippie-config/master/vscode-settings.json > ~/Library/Application\ Support/Code/User/settings.json
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension EditorConfig.EditorConfig
@@ -61,7 +65,9 @@ curl -fsSL https://raw.githubusercontent.com/chattahippie/chattahippie-config/ma
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension felipe.nasc-touchbar
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension ms-python.python
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension msjsdiag.debugger-for-chrome
-# TODO install rest of useful extensions
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension esbenp.prettier-vscode
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension nobuhito.printcode
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension vsmobile.vscode-react-native
 
 #Hyper config
 curl -fsSL https://raw.githubusercontent.com/chattahippie/chattahippie-config/master/.hyper.js -o ~/.hyper.js

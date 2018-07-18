@@ -37,6 +37,9 @@ DETACHED="\u27a6"
 CROSS="\u2718"
 LIGHTNING="\u26a1"
 GEAR="\u2699"
+MUSIC="\u266a"
+
+ITUNES_STATUS="osascript -e 'tell application \"iTunes\" to player state as string'"
 
 # Begin a segment
 # Takes two arguments, background and foreground. Both can be omitted,
@@ -117,6 +120,7 @@ prompt_status() {
   [[ $RETVAL -ne 0 ]] && symbols+="%{%F{red}%}$CROSS"
   [[ $UID -eq 0 ]] && symbols+="%{%F{yellow}%}$LIGHTNING"
   [[ $(jobs -l | wc -l) -gt 0 ]] && symbols+="%{%F{cyan}%}$GEAR"
+  [[ $(sh -c $ITUNES_STATUS) == "playing" ]] && symbols+="%{%F{cyan}%}$MUSIC"
 
   [[ -n "$symbols" ]] && prompt_segment $PRIMARY_FG default " $symbols "
 }

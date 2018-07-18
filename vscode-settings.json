@@ -23,7 +23,13 @@
         "suppressShowKeyBindingsNotice": true
     },
     "terminal.integrated.shell.osx": "/bin/zsh",
-    "editor.fontFamily": "Roboto Mono Light for Powerline, Hack, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "Monoid, Roboto Mono Light for Powerline, Hack, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
     "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.cursorBlinking": true
+    "terminal.integrated.cursorBlinking": true,
+    "editor.fontSize": 12,
+    "explorer.confirmDragAndDrop": false,
+    "editor.formatOnSave": true,
+    "javascript.format.enable": false,
+    "prettier.eslintIntegration": true
 }

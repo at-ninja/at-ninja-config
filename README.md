@@ -22,11 +22,15 @@ After inputting confirmation a few times, the script will install the following:
   * `mysql`
   * `cowsay`
   * `fortune`
+  * `hub`
+  * `thefuck`
+  * `yarn`
   * Hyper terminal
   * VS Code
   * MacDown
   * Chrome
   * Firefox
+  * `Monoid` font
   * `ionic` command line
   * `create-react-app`
   * `eclint`
